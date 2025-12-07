@@ -7,8 +7,8 @@
 // ********************
 
 // WiFi settings
-const char* ssid = "ganti-bang";
-const char* password = "ganti-bang";
+const char* ssid = "Mlue";
+const char* password = "putrabaja99";
 
 // MQTT settings
 const char* mqtt_server = "broker.hivemq.com";
@@ -159,7 +159,7 @@ void loop() {
 
   // Send every 10 seconds
   static unsigned long lastSend = 0;
-  if (millis() - lastSend > 10000) {
+  if (millis() - lastSend > 300000) {
 
     float co = readMQ7();
     float temp = readTemperature();
